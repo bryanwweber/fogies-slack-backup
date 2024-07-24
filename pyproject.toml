@@ -1,0 +1,15 @@
+[project]
+name = "fogies-slack-backup"
+version = "2024.1"
+description = "Default template for PDM package"
+authors = [
+    {name = "Bryan Weber", email = "bryan.w.weber@gmail.com"},
+]
+dependencies = []
+requires-python = "==3.12.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
