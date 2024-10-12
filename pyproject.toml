@@ -5,7 +5,13 @@ description = "Default template for PDM package"
 authors = [
     {name = "Bryan Weber", email = "bryan.w.weber@gmail.com"},
 ]
-dependencies = []
+dependencies = [
+    "slack-bolt>=1.19.1",
+    "requests>=2.32.3",
+    "google-api-python-client>=2.140.0",
+    "google-auth-httplib2>=0.2.0",
+    "google-auth-oauthlib>=1.2.1",
+]
 requires-python = "==3.12.*"
 readme = "README.md"
 license = {text = "MIT"}
@@ -13,3 +19,8 @@ license = {text = "MIT"}
 
 [tool.pdm]
 distribution = false
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "ruff>=0.5.6",
+]
